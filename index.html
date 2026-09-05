@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iyra Bahal — Learning Journey</title>
+<meta name="description" content="The digital learning portfolio of Iyra Bahal — a journey through computer science, from first lines of HTML to full-stack projects and AI fundamentals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">IYRA<span class="nav-logo-dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#journey" class="nav-link" data-section="journey">Journey</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+      <a href="#performance" class="nav-link" data-section="performance">Performance</a>
+      <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="#journey" class="btn btn-primary btn-small">Explore Journey</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-field" aria-hidden="true">
+    <span class="hero-symbol sym-1">&lt;/&gt;</span>
+    <span class="hero-symbol sym-2">{ }</span>
+    <span class="hero-symbol sym-3">01</span>
+    <span class="hero-symbol sym-4">AI</span>
+    <span class="hero-symbol sym-5">( )</span>
+    <span class="hero-glow g1"></span>
+    <span class="hero-glow g2"></span>
+  </div>
+
+  <div class="hero-inner">
+    <span class="badge reveal">Computer Science Learner</span>
+    <h1 class="hero-title reveal">Iyra Bahal</h1>
+    <p class="hero-subtitle reveal">From Curiosity to Code</p>
+    <p class="hero-desc reveal">An evolving journey through computer science, web development, programming, artificial intelligence and project-based learning.</p>
+
+    <div class="hero-timeline reveal" aria-label="Journey timeline, 2024 to future">
+      <svg viewBox="0 0 640 60" class="hero-timeline-svg" preserveAspectRatio="none">
+        <path id="heroPath" d="M20,30 C160,30 160,30 220,30 C300,30 300,30 380,30 C460,30 460,30 540,30 L620,30" />
+      </svg>
+      <div class="hero-timeline-points">
+        <div class="ht-point"><span class="ht-dot"></span><span class="ht-label">2024</span></div>
+        <div class="ht-point"><span class="ht-dot"></span><span class="ht-label">2025</span></div>
+        <div class="ht-point"><span class="ht-dot"></span><span class="ht-label">2026</span></div>
+        <div class="ht-point"><span class="ht-dot ht-future"></span><span class="ht-label">Future</span></div>
+      </div>
+    </div>
+
+    <div class="hero-actions reveal">
+      <a href="#journey" class="btn btn-primary">Explore My Journey</a>
+      <a href="#certificates" class="btn btn-ghost">View Certificates</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUDENT OVERVIEW ================= -->
+<section class="overview" id="overview">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>The Journey at a Glance</h2>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-card reveal">
+        <span class="ov-value">2024</span>
+        <span class="ov-label">Started</span>
+      </div>
+      <div class="overview-card reveal">
+        <span class="ov-value" id="techCount">7+</span>
+        <span class="ov-label">Technologies</span>
+      </div>
+      <div class="overview-card reveal">
+        <span class="ov-value" id="projectCount">Multiple Projects</span>
+        <span class="ov-label">Projects</span>
+      </div>
+      <div class="overview-card reveal">
+        <span class="ov-value">2025</span>
+        <span class="ov-label">Strongest Year</span>
+      </div>
+      <div class="overview-card reveal">
+        <span class="ov-value">Developing</span>
+        <span class="ov-label">Current Stage</span>
+      </div>
+      <div class="overview-card reveal">
+        <span class="ov-value">Tech &amp; Dev</span>
+        <span class="ov-label">Focus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEARNING JOURNEY ================= -->
+<section class="journey" id="journey">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>My Learning Journey</h2>
+      <p>A path with foundations, momentum, turning points and rebuilding.</p>
+    </div>
+
+    <div class="timeline" id="timeline">
+
+      <div class="timeline-track" aria-hidden="true"><div class="timeline-track-fill" id="trackFill"></div></div>
+
+      <article class="tl-card reveal" data-year="2024">
+        <div class="tl-marker"><span class="tl-year">2024</span></div>
+        <div class="tl-content">
+          <span class="tl-grade grade-a">A</span>
+          <h3>Where It All Started</h3>
+          <p>Iyra began her journey into computer science and started discovering how websites, programming and technology work.</p>
+          <ul class="tl-skills">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <ul class="tl-milestones">
+            <li>Started Computer Science</li>
+            <li>Learned HTML</li>
+            <li>Learned CSS</li>
+            <li>Started JavaScript</li>
+            <li>Built first web projects</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card tl-card-strong reveal" data-year="2025">
+        <div class="tl-marker tl-marker-strong"><span class="tl-year">2025</span></div>
+        <div class="tl-content">
+          <span class="tl-grade grade-aplus">A+</span>
+          <h3>From Learning to Building</h3>
+          <p>Iyra expanded her technical foundation and began exploring modern frontend, backend, database and AI technologies.</p>
+          <ul class="tl-skills">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React.js</li><li>Node.js</li><li>MongoDB</li><li>AI Basics</li>
+          </ul>
+          <ul class="tl-milestones">
+            <li>Learned React.js</li>
+            <li>Explored Node.js</li>
+            <li>Learned MongoDB</li>
+            <li>Explored AI fundamentals</li>
+            <li>Built multiple practical projects</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-turning-point reveal">
+        <div class="tl-marker tl-marker-turn"><span class="tl-turn-icon">⟡</span></div>
+        <div class="tl-content">
+          <span class="tl-tag">After June 2025</span>
+          <h3>A Change in Momentum</h3>
+          <p>After June 2025, Iyra's interest and learning consistency gradually changed. This became a different phase in her journey, giving her an opportunity to rediscover her interests and build a renewed direction.</p>
+        </div>
+      </article>
+
+      <article class="tl-card reveal" data-year="2026">
+        <div class="tl-marker"><span class="tl-year">2026</span></div>
+        <div class="tl-content">
+          <span class="tl-grade grade-avg">Average</span>
+          <h3>Building on the Foundation</h3>
+          <p>In 2026, Iyra continued building upon the technical foundation developed during the previous years and strengthened her understanding of the technologies she had explored.</p>
+          <ul class="tl-skills">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React.js</li><li>Node.js</li><li>MongoDB</li><li>AI Basics</li>
+          </ul>
+          <div class="momentum">
+            <div class="momentum-head">
+              <span>Learning Momentum</span>
+              <span class="momentum-state">Developing</span>
+            </div>
+            <div class="momentum-bar"><span class="momentum-fill"></span></div>
+          </div>
+          <p class="tl-note">Every learning journey has phases. The knowledge gained since 2024 remains an important foundation for the next stage.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS & TECHNOLOGIES ================= -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Technologies I've Explored</h2>
+      <p>Grouped by area, generated from an editable record of everything learned so far.</p>
+    </div>
+    <div class="skills-categories" id="skillsCategories"></div>
+  </div>
+</section>
+
+<!-- ================= TECHNOLOGY GROWTH ================= -->
+<section class="tech-growth" id="tech-growth">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Technology Growth</h2>
+      <p>How each year's learning connected to and built on the last. Hover a node for details.</p>
+    </div>
+    <div class="growth-map" id="growthMap"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Built, Not Just Learned</h2>
+      <p>Throughout her journey, Iyra applied what she learned by creating numerous practical projects.</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="HTML/CSS">HTML/CSS</button>
+      <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+      <button class="filter-btn" data-filter="React">React</button>
+      <button class="filter-btn" data-filter="Node.js">Node.js</button>
+      <button class="filter-btn" data-filter="MongoDB">MongoDB</button>
+      <button class="filter-btn" data-filter="AI">AI</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal modal-project">
+    <button class="modal-close" id="projectModalClose" aria-label="Close project details">&times;</button>
+    <div class="modal-project-media">
+      <img id="pmImage" src="" alt="">
+      <span class="modal-project-num" id="pmNumber"></span>
+    </div>
+    <div class="modal-project-body">
+      <span class="tl-tag" id="pmYear"></span>
+      <h3 id="pmTitle"></h3>
+      <p id="pmDescription"></p>
+      <div class="modal-project-grid">
+        <div>
+          <h4>Technologies</h4>
+          <ul class="tag-list" id="pmTech"></ul>
+        </div>
+        <div>
+          <h4>Learning Objective</h4>
+          <p id="pmObjective"></p>
+        </div>
+        <div>
+          <h4>What Was Learned</h4>
+          <p id="pmLearned"></p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a href="#" id="pmGithub" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" id="pmDemo" class="btn btn-primary" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="certificates" id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Certificates &amp; Achievements</h2>
+      <p>Every certificate represents a milestone in the learning journey.</p>
+    </div>
+    <div class="certificate-grid" id="certificateGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATE VIEWER MODAL ================= -->
+<div class="modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="modal modal-cert">
+    <button class="modal-close" id="certModalClose" aria-label="Close certificate viewer">&times;</button>
+    <div class="modal-cert-scroll">
+      <div class="certificate" id="certificateTemplate">
+        <div class="cert-corner cert-corner-tl"></div>
+        <div class="cert-corner cert-corner-tr"></div>
+        <div class="cert-corner cert-corner-bl"></div>
+        <div class="cert-corner cert-corner-br"></div>
+        <p class="cert-kicker">Certificate of Achievement</p>
+        <p class="cert-presented">This certificate is proudly presented to</p>
+        <h2 class="cert-name">IYRA BAHAL</h2>
+        <p class="cert-for">for successfully completing</p>
+        <h3 class="cert-course" id="certCourse">[Course / Program Name]</h3>
+        <p class="cert-skills" id="certSkills">[Skills]</p>
+        <div class="cert-footer">
+          <div class="cert-sign">
+            <span class="cert-sign-line"></span>
+            <span class="cert-sign-name" id="certInstructor">Instructor Name</span>
+            <span class="cert-sign-role">Instructor</span>
+          </div>
+          <div class="cert-qr" aria-hidden="true">
+            <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="none"/><g fill="currentColor"><rect x="4" y="4" width="14" height="14"/><rect x="42" y="4" width="14" height="14"/><rect x="4" y="42" width="14" height="14"/><rect x="8" y="8" width="6" height="6" fill="var(--cert-bg)"/><rect x="46" y="8" width="6" height="6" fill="var(--cert-bg)"/><rect x="8" y="46" width="6" height="6" fill="var(--cert-bg)"/><rect x="22" y="4" width="4" height="4"/><rect x="30" y="10" width="4" height="4"/><rect x="24" y="18" width="4" height="4"/><rect x="34" y="24" width="4" height="4"/><rect x="18" y="28" width="4" height="4"/><rect x="26" y="34" width="4" height="4"/><rect x="42" y="34" width="4" height="4"/><rect x="34" y="42" width="4" height="4"/><rect x="20" y="44" width="4" height="4"/><rect x="44" y="22" width="4" height="4"/></g></svg>
+          </div>
+          <div class="cert-date-id">
+            <span><strong>Date:</strong> <span id="certDate">2024</span></span>
+            <span><strong>ID:</strong> <span id="certId">IYRA-0000-000</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-actions modal-cert-actions">
+      <button class="btn btn-ghost" id="certPrintBtn">Print</button>
+      <button class="btn btn-primary" id="certDownloadBtn">Download</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= YEARLY PERFORMANCE ================= -->
+<section class="performance" id="performance">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Performance Through the Years</h2>
+    </div>
+
+    <div class="perf-cards">
+      <div class="perf-card reveal">
+        <span class="perf-year">2024</span>
+        <span class="perf-grade grade-a">A</span>
+        <span class="perf-label">Foundation &amp; Exploration</span>
+      </div>
+      <div class="perf-card perf-card-strong reveal">
+        <span class="perf-year">2025</span>
+        <span class="perf-grade grade-aplus">A+</span>
+        <span class="perf-label">Strongest Learning Phase</span>
+      </div>
+      <div class="perf-card reveal">
+        <span class="perf-year">2026</span>
+        <span class="perf-grade grade-avg">Average</span>
+        <span class="perf-label">Developing &amp; Rebuilding Momentum</span>
+      </div>
+    </div>
+
+    <div class="perf-graph-wrap reveal">
+      <svg viewBox="0 0 600 220" class="perf-graph" id="perfGraph" preserveAspectRatio="none">
+        <line x1="40" y1="30" x2="40" y2="180" class="pg-axis"/>
+        <line x1="40" y1="180" x2="570" y2="180" class="pg-axis"/>
+        <path id="pgPath" d=""/>
+        <g id="pgPoints"></g>
+        <g id="pgLabels"></g>
+      </svg>
+    </div>
+
+    <p class="perf-note reveal">Grades capture one part of the journey. Skills, projects, curiosity and practical experience are equally important.</p>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENT WALL ================= -->
+<section class="achievements" id="achievements">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Milestones Worth Remembering</h2>
+    </div>
+    <div class="achievement-grid" id="achievementGrid"></div>
+  </div>
+</section>
+
+<!-- ================= LEARNING MILESTONES ================= -->
+<section class="milestones" id="milestones">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Learning Milestones</h2>
+      <p>Click any milestone to see more about it.</p>
+    </div>
+    <div class="milestone-columns" id="milestoneColumns"></div>
+  </div>
+</section>
+
+<div class="milestone-popup" id="milestonePopup">
+  <button class="milestone-popup-close" id="milestonePopupClose" aria-label="Close">&times;</button>
+  <p class="milestone-popup-year" id="mpYear"></p>
+  <h4 id="mpTitle"></h4>
+  <p id="mpDesc"></p>
+</div>
+
+<!-- ================= GROWTH & REFLECTION ================= -->
+<section class="growth" id="growth">
+  <div class="container growth-inner">
+    <div class="growth-text reveal">
+      <h2>More Than Grades</h2>
+      <p>Iyra's journey cannot be measured only through grades. Since beginning in 2024, she has explored different areas of technology, built projects, learned multiple technologies and discovered what interests her.</p>
+      <p>Learning is rarely a straight line. Interest changes, momentum changes, and priorities change. What matters is the foundation built along the way and the ability to begin again with greater understanding.</p>
+    </div>
+    <div class="growth-traits reveal">
+      <span class="trait">Curiosity</span>
+      <span class="trait">Consistency</span>
+      <span class="trait">Creativity</span>
+      <span class="trait">Problem Solving</span>
+      <span class="trait">Practical Learning</span>
+      <span class="trait">Growth</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT'S NEXT ================= -->
+<section class="whats-next" id="whats-next">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>What's Next for Iyra?</h2>
+      <p>Possible Next Steps</p>
+    </div>
+    <div class="next-grid reveal" id="nextGrid"></div>
+    <div class="next-cta reveal">
+      <a href="#journey" class="btn btn-primary">Continue the Journey →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Iyra Bahal</span>
+      <span class="footer-tagline">Learning. Building. Growing.</span>
+      <span class="footer-journey">2024 — Present</span>
+    </div>
+    <nav class="footer-links">
+      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#achievements">Achievements</a>
+    </nav>
+    <div class="footer-bottom">
+      <span class="footer-note">The journey is still being written.</span>
+      <span class="footer-copy">© 2026 Iyra Bahal — Learning Journey</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
